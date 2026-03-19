@@ -12,6 +12,7 @@ void insertionSort(int array[], int size)
             array[move+1]=array[move];
             move--;
         }
+      
         array[move+1]=temp;
     }
     cout<<"the sorted array is"<<endl;
