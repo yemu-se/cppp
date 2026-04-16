@@ -19,15 +19,18 @@ void addAtEnd(Node **head, int newValue)
 {
     Node* newnode = new Node;
     newnode->data =newValue;
-    newnode->next =*head;
-    if(*head ==nullptr){
+    newnode->next =nullptr;
+
+    if(*head == nullptr){
         *head = newnode;
+        return;
     }
-    while (newnode->next != nullptr)
+    Node* last = *head;
+    while (last->next != nullptr)
     {
-        newnode =newnode->next;
+        last =last->next;
     }
-    *head = newnode;
+  last->next = newnode;
     
 }
 

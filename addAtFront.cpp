@@ -24,6 +24,7 @@ void addFront(NOde** head,int newValue){
 }
 
 int main(){
+    
  // NOde* head=new NOde;  // Start with an empty list instead of an uninitialized node  This print gabge value
   NOde* head =nullptr;
 
